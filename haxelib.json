@@ -1,0 +1,11 @@
+{
+    "name": "google-apps-script",
+	"url": "https://github.com/tong/google-apps-script",
+	"license": "Public",
+	"tags": ["google","javascript","script","app"],
+	"description": "Extern classes for google's apps scripts api",
+	"version": "0.1",
+	"releasenote": "Initial release",
+	"contributors": ["tong"],
+	"dependencies": {}
+}
