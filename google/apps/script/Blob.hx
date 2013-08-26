@@ -1,8 +1,5 @@
 package google.apps.script;
 
-//TODO
-typedef Byte = String;
-
 @:native("Blob")
 extern class Blob {
 	static function copyBlob() : Blob;
