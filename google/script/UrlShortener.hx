@@ -29,8 +29,8 @@ extern class AnalyticsSnapshot {
 	function getBrowsers() : Array<StringCount>;
 	function getCountries() : Array<StringCount>;
 	function getLongUrlClicks() : String;
-	function getPlatforms( id : String ) : Array<StringCount;
-	function getReferrers() : Array<StringCount;
+	function getPlatforms( id : String ) : Array<StringCount>;
+	function getReferrers() : Array<StringCount>;
 	function getShortUrlClicks() : String;
 	function setBrowsers( browsers : Array<StringCount> ) : AnalyticsSnapshot;
 	function setCountries( countries : Array<StringCount> ) : AnalyticsSnapshot;

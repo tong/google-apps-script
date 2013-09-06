@@ -24,8 +24,8 @@ enum Color {
 
 @:native("DirectionFinder")
 extern class DirectionFinder {
+	@:overload(function(address:String):DirectionFinder{})
 	function addWaypoint( latitude : Float, longitude : Float ) : DirectionFinder;
-	function addWaypoint( address : String ) : DirectionFinder;
 	function clearWaypoints() : DirectionFinder;
 	function getDirections() : Dynamic;
 	function setAlternatives( useAlternatives : Bool ) : DirectionFinder;
@@ -42,7 +42,7 @@ extern class DirectionFinder {
 }
 
 @:native("DirectionFinderEnums")
-extern class DirectionFinder {
+extern class DirectionFinderEnums {
 	var Avoid : Avoid;
 	var Mode : Mode;
 }
@@ -50,11 +50,10 @@ extern class DirectionFinder {
 @:native("ElevationSampler")
 extern class ElevationSampler {
 	function sampleLocation( latitude : Float, longitude : Float ) : Dynamic;
-	function sampleLocations( points : Array<Float> ) : Dynamic;
 	@:overload(function(points:Array<Float>):Dynamic{})
 	function sampleLocations( encodedPolyline : String ) : Dynamic;
-	@:overload(function(encodedPolyline:String>,numSamples:Int):Dynamic{})
-	function samplePath( points : Array<Float> numSamples : Int ) : Dynamic;
+	@:overload(function(encodedPolyline:String,numSamples:Int):Dynamic{})
+	function samplePath( points : Array<Float>, numSamples : Int ) : Dynamic;
 }
 
 @:fakeEnum(String)

@@ -1,23 +1,24 @@
 
-##
-## google apps script
-##
+## hxgooglescript
 
-run.n:
-	haxe -neko $@ -main google.apps.script.Tool
+PROJECT=googlescript
 
-google-apps-script.zip:
-	zip -r $@ $(shell git ls-files)
+#run.n:
+#	haxe -neko $@ -main google.apps.script.Tool
 
-haxelib: google-apps-script.zip
+$(PROJECT).zip:
+	zip -r $@ google/ haxelib.json extraParameters.hxml README
+	#zip -r $@ $(shell git ls-files)
+
+haxelib: $(PROJECT).zip
 
 install:
-	haxelib local google-apps-script.zip
+	haxelib local $(PROJECT).zip
 
 uninstall:
-	haxelib remove google-apps-script
+	haxelib remove $(PROJECT)
 
 clean:
-	rm -f google-apps-script.zip
+	rm -f $(PROJECT).zip
 
 .PHONY: haxelib install uninstall clean

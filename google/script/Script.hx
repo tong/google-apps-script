@@ -1,5 +1,7 @@
 package google.script;
 
+import google.script.Forms;
+
 @:native("SpreadsheetTriggerBuilder")
 extern class SpreadsheetTriggerBuilder {
     function create() : Trigger;

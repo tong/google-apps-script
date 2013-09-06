@@ -1,5 +1,7 @@
 package google.script;
 
+typedef Char = String;
+
 @:native("Utilities")
 extern class Utilities {
 	static function base64Decode( encoded : String, ?charset : Charset ) : Array<Byte>;
