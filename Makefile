@@ -1,7 +1,7 @@
 
 ## hxgooglescript
 
-PROJECT=googlescript
+PROJECT = googlescript
 
 $(PROJECT).zip: src/google/script/*.hx
 	zip -r $@ example src/ haxelib.json extraParameters.hxml README

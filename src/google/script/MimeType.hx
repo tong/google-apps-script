@@ -1,10 +1,8 @@
 package google.script;
 
 @:require(googlescript)
-@:fakeEnum(String)
 @:native("MimeType")
-enum MimeType {
-	/*
+extern enum MimeType {
 	GOOGLE_APPS_SCRIPT;
 	GOOGLE_DRAWINGS;
 	GOOGLE_DOCS;
@@ -35,14 +33,4 @@ enum MimeType {
 	MICROSOFT_WORD;
 	MICROSOFT_WORD_LEGACY;
 	ZIP;
-	*/
-	ATOM;
-	CSV;
-	ICAL,
-	JAVASCRIPT;
-	JSON;
-	RSS;
-	TEXT;
-	VCARD;
-	XML;
 }

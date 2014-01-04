@@ -3,7 +3,7 @@
 	"url": "https://github.com/tong/hxgooglescript",
 	"license": "Public",
 	"tags": ["google","javascript","script","googlescript"],
-	"description": "GoogleAppScripts type definitions",
+	"description": "Google app scripts type definitions",
 	"version": "0.1.2",
 	"releasenote": "See CHANGES",
 	"classPath" : "src/",
