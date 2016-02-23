@@ -1,0 +1,21 @@
+<form id="myForm">
+    <input type="text" name="myName" placeholder="Your name..">
+    <input type="file" name="myFile">
+    <input type="submit" value="Upload File"
+           onclick="this.value='Uploading..';
+                    google.script.run.withSuccessHandler(fileUploaded).uploadFiles(this.parentNode);
+                    return false;">
+</form>
+
+<div id="output"></div>
+
+<script>
+function fileUploaded(status) {
+    document.getElementById('myForm').style.display = 'none';
+    document.getElementById('output').innerHTML = status;
+}
+</script>
+
+<style>
+    input { display:block; margin: 20px; }
+</style>
