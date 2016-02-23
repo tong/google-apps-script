@@ -1,0 +1,5 @@
+-js hello.gs
+-lib google-apps-script
+-main Hello
+-dce full
+-debug

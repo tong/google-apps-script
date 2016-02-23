@@ -1,10 +1,10 @@
 {
-    "name": "googlescript",
+    "name": "google-apps-script",
 	"url": "https://github.com/tong/hxgooglescript",
 	"license": "Public",
 	"tags": ["google","javascript","script","googlescript"],
-	"description": "Google app scripts type definitions",
-	"version": "0.1.2",
+	"description": "Google apps script type definitions",
+	"version": "0.2.0",
 	"releasenote": "See CHANGES",
 	"classPath" : "src/",
 	"contributors": ["tong"],

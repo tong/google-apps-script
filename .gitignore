@@ -1,0 +1,5 @@
+_*
+examples/*/*.gs
+examples/*/*.map
+haxedoc.xml
+TODO*

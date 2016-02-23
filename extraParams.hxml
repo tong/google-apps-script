@@ -1,2 +1,2 @@
 -D js-classic
--D googlescript
+--macro google.apps.script.Lib.build()

@@ -1,6 +1,4 @@
-HXGOOGLESCRIPT
-==============
-Haxe/Javascript type definitions for google apps scripts.  
-https://developers.google.com/apps-script/
 
-!Types may be incomplete and/or out of date | You are welcome to submit patches!
+# Google Apps Script
+
+Haxe/Javascript type definitions for the [google apps script api](https://developers.google.com/apps-script/).
