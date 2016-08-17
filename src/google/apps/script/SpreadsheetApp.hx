@@ -79,9 +79,9 @@ extern class DataValidationBuilder {
 	function requireTextEqualTo(text:String) : DataValidationBuilder;
 	function requireTextIsEmail() : DataValidationBuilder;
 	function requireTextIsUrl() : DataValidationBuilder;
-	@:overload(function requireValueInList(values:Array<String>, ?showDropdown:Bool = false) : DataValidationBuilder{});
+	@:overload(function(values:Array<String>, ?showDropdown:Bool = false) : DataValidationBuilder{})
 	function requireValueInList(values:Array<String>) : DataValidationBuilder;
-	@:overload(function requireValueInRange(range:Range, ?showDropdown:Bool = false) : DataValidationBuilder{});
+	@:overload(function(range:Range, ?showDropdown:Bool = false) : DataValidationBuilder{})
 	function requireValueInRange(range:Range) : DataValidationBuilder;
 	function setAllowInvalid(allowInvalidData:Bool) : DataValidationBuilder;
 	function setHelpText(helpText:String) : DataValidationBuilder;
@@ -104,7 +104,7 @@ extern class SpreadsheetApp {
     static var BorderStyle : BorderStyle;
     static var DataValidationCriteria : DataValidationCriteria;
 	static var ProtectionType : ProtectionType;
-	@:overload(function create( name:String, rows:Int, columns:Int):Spreadsheet{});
+	@:overload(function( name:String, rows:Int, columns:Int):Spreadsheet{})
     static function create( name : String ) : Spreadsheet;
     static function flush() : Void;
     static function getActive() : Spreadsheet;
