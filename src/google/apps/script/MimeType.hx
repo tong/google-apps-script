@@ -2,7 +2,7 @@ package google.apps.script;
 
 @:require(google_apps_script)
 @:native("MimeType")
-@:enum abstract MimeType(String) from String to String {
+@:enum abstract MimeType(String) to String {
 	var GOOGLE_APPS_SCRIPT = "GOOGLE_APPS_SCRIPT";
 	var GOOGLE_DRAWINGS = "GOOGLE_DRAWINGS";
 	var GOOGLE_DOCS = "GOOGLE_DOCS";
