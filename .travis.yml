@@ -13,4 +13,7 @@ matrix:
     - haxe: development
 
 script:
+  - haxelib git google-apps-script https://github.com/tong/google-apps-script
   - haxe haxedoc.hxml
+  - haxe --cwd examples/hello/ build.hxml
+  - haxe --cwd examples/upload-to-drive/ build.hxml
