@@ -1,6 +1,7 @@
 --no-output
 -js api.js
 -xml haxedoc.xml
--lib google-apps-script
+-cp src
 --macro include('google.apps.script')
 -dce no
+-D google-apps-script
