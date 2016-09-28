@@ -14,6 +14,10 @@ class Lib {
 
 	static function build() {
 
+		if( Context.defined( 'debug' ) ) {
+			Context.error( 'remove the -debug parameter', Context.currentPos() );
+		}
+
 		var path = Compiler.getOutput();
 
 		Context.onAfterGenerate(function(){
@@ -25,7 +29,7 @@ class Lib {
 				var content = File.getContent( path );
 				content = content.substr( 0, content.length-1 );
 				var i = content.lastIndexOf('\n');
-				var mod = content.substr( 0, i ) + '\nfunction main(){'+content.substr( i+1 )+'}\n';
+				var mod = content.substr( 0, i ) + '\nfunction main() { '+content.substr( i+1 )+' }\n';
 				File.saveContent( path, mod );
 			}
 		});
