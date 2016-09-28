@@ -1,6 +1,6 @@
 {
     "name": "google-apps-script",
-	"url": "https://github.com/tong/hxgooglescript",
+	"url": "https://github.com/tong/google-apps-script",
 	"license": "Public",
 	"tags": ["google","javascript","script","googlescript"],
 	"description": "Google apps script type definitions",
