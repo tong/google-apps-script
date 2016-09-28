@@ -1,6 +1,5 @@
-App
 -js app.gs
 -lib google-apps-script
 -dce full
-#-debug
--D no_main
+#-D no_main
+App

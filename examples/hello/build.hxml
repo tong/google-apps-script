@@ -2,4 +2,3 @@
 -lib google-apps-script
 -main Hello
 -dce full
--debug
