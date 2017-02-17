@@ -166,6 +166,7 @@ extern class GmailApp {
     static function refreshMessages( messages : Array<GmailMessage> ) : GmailApp;
     static function refreshThreads( thread : Array<GmailThread> ) : GmailApp;
     @:overload(function(query:String,start:Int,max:Int):Array<GmailThread>{})
+    static function search( query:String ) : Array<GmailThread>;
     static function sendEmail( recipient : String, subject : String, body : String, ?options : Dynamic ) : GmailApp;
     static function starMessage( message : GmailMessage ) : GmailApp;
     static function starMessages( messages : Array<GmailMessage> ) : GmailApp;
