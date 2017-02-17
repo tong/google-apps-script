@@ -95,7 +95,7 @@ extern class GmailThread {
    function moveToSpam() : GmailThread;
    function moveToTrash() : GmailThread;
    function refresh() : GmailThread;
-   function removeLabe( label : GmailLabel ) : GmailThread;
+   function removeLabel( label : GmailLabel ) : GmailThread;
    function reply( body : String, ?options : GmailReplyOptions ) : GmailThread;
    function replyAll( body : String, ?options : GmailReplyOptions ) : GmailThread;
 }
