@@ -1,14 +1,13 @@
 package google.apps.script;
 
 @:require(google_apps_script)
-@:fakeEnum(String)
 @:native("Role")
-enum Role {
-	OWNER;
-	MANAGER;
-	MEMBER;
-	INVITED;
-	PENDING;
+enum abstract Role(String) {
+	var OWNER;
+	var MANAGER;
+	var MEMBER;
+	var INVITED;
+	var PENDING;
 }
 
 @:require(google_apps_script)
