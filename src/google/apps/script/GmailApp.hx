@@ -95,7 +95,7 @@ extern class GmailThread {
    function moveToSpam() : GmailThread;
    function moveToTrash() : GmailThread;
    function refresh() : GmailThread;
-   function removeLabe( label : GmailLabel ) : GmailThread;
+   function removeLabel( label : GmailLabel ) : GmailThread;
    function reply( body : String, ?options : GmailReplyOptions ) : GmailThread;
    function replyAll( body : String, ?options : GmailReplyOptions ) : GmailThread;
 }
@@ -166,6 +166,7 @@ extern class GmailApp {
     static function refreshMessages( messages : Array<GmailMessage> ) : GmailApp;
     static function refreshThreads( thread : Array<GmailThread> ) : GmailApp;
     @:overload(function(query:String,start:Int,max:Int):Array<GmailThread>{})
+    static function search( query:String ) : Array<GmailThread>;
     static function sendEmail( recipient : String, subject : String, body : String, ?options : Dynamic ) : GmailApp;
     static function starMessage( message : GmailMessage ) : GmailApp;
     static function starMessages( messages : Array<GmailMessage> ) : GmailApp;
