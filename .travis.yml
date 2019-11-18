@@ -2,10 +2,9 @@ language: haxe
 
 os:
   - linux
-  - osx
 
 haxe:
-  - "3.4.0"
+  - "4.0.2"
   - development
 
 matrix:
